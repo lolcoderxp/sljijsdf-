@@ -155,7 +155,6 @@
       animation: slideUpFade 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.14s forwards;
     }
 
-    /* --- بخش سه‌بعدی کشور با باکس کوچک داخلی --- */
     .country-3d-card {
       width: 100%;
       height: 58px;
@@ -195,7 +194,6 @@
       border-radius: 6px;
     }
 
-    /* باکس کوچک داخل بخش کشور (Inner 3D Pill) */
     .country-inner-box {
       display: flex;
       align-items: center;
@@ -226,7 +224,6 @@
       letter-spacing: 0.3px;
     }
 
-    /* دکمه دایره‌ای سه بعدی سمت چپ */
     .country-arrow-btn {
       width: 32px;
       height: 32px;
@@ -243,7 +240,6 @@
         inset 0 1px 1px rgba(255, 255, 255, 0.25);
     }
 
-    /* --- بخش شماره تلفن --- */
     .phone-3d-card {
       width: 100%;
       height: 60px;
@@ -382,7 +378,7 @@
       100% { opacity: 1; transform: scaleX(1.2); }
     }
 
-    /* کیپد ۳بعدی */
+    /* کیپد ۳بعدی با گوشه‌های معکوس‌شده برای هاست */
     .keypad {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -413,10 +409,11 @@
       transition: all 0.12s ease;
     }
 
-    .key-1 { border-top-left-radius: 26px; }
-    .key-3 { border-top-right-radius: 26px; }
-    .key-7 { border-bottom-left-radius: 26px; }
-    .key-9 { border-bottom-right-radius: 26px; }
+    /* گوشه‌های خمیده معکوس‌شده برای تطبیق با هاست */
+    .key-1 { border-top-right-radius: 26px; border-top-left-radius: 14px; }
+    .key-3 { border-top-left-radius: 26px; border-top-right-radius: 14px; }
+    .key-7 { border-bottom-right-radius: 26px; border-bottom-left-radius: 14px; }
+    .key-9 { border-bottom-left-radius: 26px; border-bottom-right-radius: 14px; }
 
     .key-button:active {
       background: #050507;
